@@ -1,0 +1,151 @@
+.header {
+    justify-content: space-between;
+}
+
+.header__menu--icon,
+.aside {
+    display: none;
+}
+
+.header__nav {
+    display: flex;
+    position: relative;
+    right: 10px;
+}
+
+.header__nav nav {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+.header__nav nav ul {
+    display: flex;
+}
+
+.header__nav nav ul li {
+    display: flex;
+    list-style: none;
+    padding: 5px;
+    margin: 0 20px;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.header__nav nav ul li a {
+    color: var(--light-couleur);
+    text-decoration: none;
+    padding: 5px;
+}
+
+.subrayado::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    height: 2px;
+    background-color: var(--couleur-special);
+}
+
+.subrayado:hover {
+    color: var(--couleur-special);
+}
+
+.subrayado:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+
+.header__nav nav ul li a:hover,
+.header__nav nav ul li a:focus {
+    color: var(--couleur-special);
+    outline-color: var(--couleur-special);
+}
+
+.header__invisible {
+    width: 100px;
+}
+
+main {
+    margin: 25px 100px;
+    margin-top: 100px;
+}
+
+.main__hero--presentation {
+    font-size: clamp(5rem, 8vw, 7rem);
+}
+
+.content h3 {
+    font-size: 2rem;
+}
+
+.main__about {
+    width: 100%;
+    display: grid;
+    flex-wrap: wrap;
+}
+
+.main__about--skills li {
+    color: var(--couleur);
+    margin-left: 20px;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+}
+
+.main__about--container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.main__about--info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.main__about--img {
+    width: 100%;
+}
+
+.main__social-networks {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.main__social--networks-sec {
+    display: flex;
+    flex-direction: row;
+}
+
+svg {
+    margin-top: 20px;
+}
+
+.main__projects--container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    gap: 15px;
+    position: relative;
+    margin: 50px 0;
+}
+
+.main__container--projects {
+    margin-bottom: 50px;
+}
+
+.main__container--buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.project-button {
+    padding: 10px;
+    align-items: center;
+    margin: 0 10px;
+}
